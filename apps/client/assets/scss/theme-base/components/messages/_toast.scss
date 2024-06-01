@@ -1,0 +1,95 @@
+.p-toast {
+    opacity: 1;
+    z-index: 99999 !important;
+
+    .p-toast-message {
+        margin: $toastMargin;
+        border-radius: $borderRadius;
+
+        .p-toast-message-content {
+            padding: $toastPadding;
+
+            .p-toast-message-text {
+                margin: $toastMessageTextMargin;
+            }
+
+            .p-toast-message-icon {
+                font-size: $toastIconFontSize;
+                
+                &.p-icon {
+                    width: $toastIconFontSize;
+                    height: $toastIconFontSize;
+                }
+            }
+
+            .p-toast-summary {
+                font-weight: $toastTitleFontWeight;
+            }
+
+            .p-toast-detail {
+                margin: $toastDetailMargin;
+            }
+        }
+
+        .p-toast-icon-close {
+            width: $toastIconFontSize;
+            height: $toastIconFontSize;
+            border-radius: $actionIconBorderRadius;
+            background: transparent;
+            transition: $actionIconTransition;
+
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+
+        &.p-toast-message-info {
+            background: rgba(0, 87, 255, 0.2);
+            backdrop-filter: blur(5px);
+            border: dashed 2px $primaryColor;
+            color: $primaryColor;
+
+            .p-toast-message-icon,
+            .p-toast-icon-close {
+                color: $primaryColor;
+            }
+        }
+
+        &.p-toast-message-success {
+            background: rgba($successButtonBg, 0.2);
+            backdrop-filter: blur(5px);
+            border: dashed 2px $successButtonBg;
+            color: $successButtonBg;
+
+            .p-toast-message-icon,
+            .p-toast-icon-close {
+                color: $successButtonBg;
+            }
+        }
+
+        &.p-toast-message-warn {
+            background: $warningMessageBg;
+            border: $warningMessageBorder;
+            border-width: $messageBorderWidth;
+            color: $warningMessageTextColor;
+
+            .p-toast-message-icon,
+            .p-toast-icon-close {
+                color: $warningMessageIconColor;
+            }
+        }
+
+        &.p-toast-message-error {
+            background: rgba($dangerButtonBg, 0.2);
+            backdrop-filter: blur(5px);
+            border: dashed 2px $dangerButtonBg;
+            color: $dangerButtonBg;
+
+            .p-toast-message-icon,
+            .p-toast-icon-close {
+                color: $dangerButtonBg;
+            }
+        }
+
+    }
+}

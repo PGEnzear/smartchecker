@@ -1,0 +1,49 @@
+.p-tabview {
+  .p-tabview-nav {
+    column-gap: 1rem;
+
+    li {
+      margin-right: $tabviewHeaderSpacing;
+
+      .p-tabview-nav-link {
+        border-radius: 5px;
+        background: rgba(185, 195, 255, 0.2);
+        color: #b9c3ff;
+        padding: 10px 20px;
+        transition: $listItemTransition;
+      }
+
+      svg {
+        width: 1rem;
+        height: 1rem;
+      }
+
+      svg path {
+        fill: #b9c3ff;
+        transition: $listItemTransition;
+      }
+
+      &:not(.p-highlight):not(.p-disabled):hover .p-tabview-nav-link,
+      &.p-highlight .p-tabview-nav-link {
+        background: rgba(0, 87, 255, 0.2);
+        color: #0057ff;
+
+        svg path {
+          fill: #0057ff;
+        }
+      }
+    }
+  }
+
+  .p-tabview-nav-btn.p-link {
+    background: transparent;
+    color: $tabviewHeaderTextActiveColor;
+    width: $buttonIconOnlyWidth;
+  }
+
+  .p-tabview-panels {
+    background: transparent;
+    padding-top: 2rem;
+    color: $tabviewContentTextColor;
+  }
+}

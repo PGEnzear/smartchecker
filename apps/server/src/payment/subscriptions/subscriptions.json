@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "🕒 2 weeks",
+    "time": 1209600,
+    "price": 100
+  },
+  {
+    "id": 2,
+    "name": "💰 1 month",
+    "time": 2630000,
+    "price": 150
+  },
+  {
+    "id": 3,
+    "name": "🌟 3 months",
+    "time": 1209600,
+    "price": 400
+  },
+  {
+    "id": 4,
+    "name": "⚡ 6 months",
+    "time": 15780000,
+    "price": 700,
+    "priority": 1
+  },
+  {
+    "id": 5,
+    "name": "🌈 1 year",
+    "time": 31536000,
+    "price": 1200,
+    "priority": 2
+  }
+]

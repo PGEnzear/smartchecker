@@ -1,0 +1,15 @@
+@import 'nprogress/nprogress.css';
+
+#nprogress {
+  position: fixed;
+  z-index: 999;
+
+  .bar {
+    background: $primaryColor;
+  }
+
+  .spinner-icon {
+    border-top-color: $primaryColor;
+    border-left-color: $primaryColor;
+  }
+}

@@ -1,0 +1,134 @@
+@import "../fonts/stylesheet.css";
+@import "primeflex/primeflex.scss";
+@import "./theme/theme.scss";
+@import "./mixins";
+@import "./boxicons.scss";
+
+@include media-breakpoint-up(lg) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+body {
+  background-color: #060817;
+  font-family: "Lab Grotesque" !important;
+}
+
+.p-component {
+  font-family: "Lab Grotesque" !important;
+}
+
+.auth-banner {
+  background-image: url(~/assets/images/auth-banner.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p-card-white {
+  border: 1px solid #dde6ef !important;
+  background-color: #fff;
+  color: #67748e;
+}
+
+.p-timeline-event-opposite {
+  display: none;
+}
+
+.p-timeline-event {
+  min-height: 35px !important;
+}
+
+@import "./modal";
+@import "./animations";
+@import "./nprogress";
+@import "./container";
+@import "./colors";
+
+.sidebar {
+  .sidebar-icon {
+    width: 30px;
+    height: 30px;
+    transition: background-color $transitionDuration, color $transitionDuration;
+
+    @include media-breakpoint-down(xl) {
+      width: 45px;
+      height: 45px;
+      font-size: 24px;
+    }
+  }
+
+  a {
+    border-radius: $borderRadius;
+    text-decoration: none;
+    .sidebar-icon {
+      background-color: #b9c3ff;
+      color: #060817;
+    }
+
+    color: #b9c3ff !important;
+
+    &.router-link-exact-active,
+    &:hover {
+      color: #fff !important;
+
+      .sidebar-icon {
+        background-color: $primaryColor;
+        color: #fff;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($buttonBg, $textButtonHoverBgOpacity);
+    }
+  }
+
+  button {
+    color: $dangerButtonBg !important;
+  }
+
+  @include media-breakpoint-down(xl) {
+    button,
+    .notifications {
+      padding: 0 !important;
+      .sidebar-icon {
+        padding: 0 !important;
+        width: auto;
+        height: auto;
+      }
+
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+  }
+}
+
+.wallet-card {
+  border: 1px solid #0f1227;
+  background: #0a0d20;
+
+  .text-header {
+    color: #b9c3ff;
+  }
+
+  .mnemonic {
+    border: 1px solid #ff344c;
+    background: rgba(255, 52, 76, 0.2);
+    color: #ff344c;
+  }
+}
+
+.wallets-balances-table {
+  max-width: 700px;
+
+  td {
+    padding: 5px 0;
+  }
+}
+
+.p-tieredmenu-root-list, .p-tieredmenu-overlay {
+  min-width: 300px !important;
+}

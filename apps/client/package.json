@@ -1,0 +1,39 @@
+{
+  "name": "@smartchecker/client",
+  "private": true,
+  "scripts": {
+    "build": "nuxt generate --no-clear",
+    "dev": "nuxt dev --no-clear",
+    "generate": "nuxt generate --no-clear",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@smartchecker/config": "workspace:*",
+    "@types/node": "^18.17.3",
+    "nuxt": "^3.6.5",
+    "primevue-sass-theme": "github:primefaces/primevue-sass-theme",
+    "sass": "^1.66.0",
+    "vite-svg-loader": "^4.0.0"
+  },
+  "dependencies": {
+    "@hcaptcha/vue3-hcaptcha": "^1.3.0",
+    "@pinia/nuxt": "^0.4.11",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "@vueuse/core": "^10.4.1",
+    "@vueuse/integrations": "^10.4.1",
+    "@vueuse/nuxt": "^10.4.1",
+    "@vueuse/shared": "^10.4.1",
+    "axios": "^1.4.0",
+    "boxicons": "^2.1.4",
+    "jwt-decode": "^3.1.2",
+    "mitt": "^3.0.1",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.1.6",
+    "primeflex": "^3.3.1",
+    "primevue": "^3.32.2",
+    "socket.io-client": "^4.7.2",
+    "uuid": "^9.0.0"
+  }
+}

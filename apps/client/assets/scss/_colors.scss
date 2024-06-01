@@ -1,0 +1,16 @@
+$text-color-properties: (
+  "text-bluegray-2": #b9c3ff,
+  "text-danger": $warningButtonBg,
+  "text-success": $successButtonBg,
+  "text-warning": $warningButtonBg,
+);
+
+$bg-color-properties: (
+  "bg-dark": #060817,
+  "bg-card": #0a0d20,
+  "bg-warning": $warningButtonBg,
+  "bg-danger": $dangerButtonBg,
+);
+
+@include style-class("color", $text-color-properties, true);
+@include style-class("background-color", $bg-color-properties, true);
